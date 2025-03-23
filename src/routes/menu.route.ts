@@ -1,7 +1,8 @@
 import express from "express" 
 import upload from "../middlewares/multer";
 import {isAuthenticated} from "../middlewares/isAuthenticated";
-import { addMenu, editMenu } from "../controller/menu.controller";
+import { addMenu, editMenu } from "../controllers/menu.controllers";
+
 
 const router = express.Router();
 
