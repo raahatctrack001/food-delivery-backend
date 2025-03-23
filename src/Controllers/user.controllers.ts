@@ -5,7 +5,7 @@ import crypto from "crypto";
 import { sendPasswordResetEmail, sendResetSuccessEmail, sendVerificationEmail, sendWelcomeEmail } from "../mailtrap/email";
 import { generateVerificationCode } from "../utils/generateVerificationCode.utils";
 import { generateToken } from "../Utils/generateToken.utils";
-import { uploadOnCloudinary } from "../Utils/cloudinary.utils";
+import cloudinary from "../utils/cloudinary";
 
 export const signup = async (req: Request, res: Response) => {
     try {
